@@ -56,7 +56,7 @@ public class Login extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	 * Create the frame Hola Prueba de rama1.
 	 */
 	public Login() {
 		setLocationByPlatform(true);
