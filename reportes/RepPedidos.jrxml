@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RepPedidos" pageWidth="1190" pageHeight="842" orientation="Landscape" columnWidth="1150" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e9df811e-450a-4440-9799-e5e23083e93a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString>
+		<![CDATA[SELECT
+     pedidos.`IdPedido` AS pedidos_IdPedido,
+     pedidos.`Fecha_pedido` AS pedidos_Fecha_pedido,
+     pedidos.`Fecha_esperada` AS pedidos_Fecha_esperada,
+     pedidos.`Fecha_entrega` AS pedidos_Fecha_entrega,
+     pedidos.`Estado` AS pedidos_Estado,
+     pedidos.`Comentario` AS pedidos_Comentario,
+     pedidos.`Idcliente` AS pedidos_Idcliente
+FROM
+     `pedidos` pedidos]]>
+	</queryString>
+	<field name="pedidos_IdPedido" class="java.lang.Integer"/>
+	<field name="pedidos_Fecha_pedido" class="java.sql.Date"/>
+	<field name="pedidos_Fecha_esperada" class="java.sql.Date"/>
+	<field name="pedidos_Fecha_entrega" class="java.sql.Date"/>
+	<field name="pedidos_Estado" class="java.lang.String"/>
+	<field name="pedidos_Comentario" class="java.lang.String"/>
+	<field name="pedidos_Idcliente" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="749b60a1-03e4-4f72-99aa-e90464137870"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Reporte Pedidos]]></text>
+			</staticText>
+			<image hAlign="Center">
+				<reportElement x="998" y="-20" width="152" height="90" uuid="d18d8fe3-d79e-4d5d-820c-3fc79315a78c"/>
+				<imageExpression><![CDATA["C:\\Users\\everg\\eclipse-workspace - vivero\\vivero\\reportes\\Vivero_Zoe_logo sin fondo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="7e907f8f-9b4a-474a-8d76-2befb145ef0b"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="63" height="15" uuid="d3e6478f-04cb-435a-92c7-08e774f58a1f"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="63" y="19" width="93" height="15" uuid="591c5e81-5e8e-415e-b81e-667f5c5025e8"/>
+				<text><![CDATA[Fecha pedido]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="156" y="19" width="97" height="15" uuid="81b1f44a-9d1c-46e3-8992-bfec5ce81863"/>
+				<text><![CDATA[Fecha esperada]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="253" y="19" width="88" height="15" uuid="13bb3186-06fd-4816-a1ec-935553cb3132"/>
+				<text><![CDATA[Fecha entrega]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="341" y="19" width="123" height="15" uuid="f3e53169-8da0-42ad-9bf8-0ed891756158"/>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="464" y="19" width="179" height="15" uuid="8eba00ed-9c90-4bdc-b56f-7ce3633cb459"/>
+				<text><![CDATA[Descripcion]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1" uuid="10f27b1d-0c10-46a5-a0e1-d529f13fdd77"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="Detail" x="0" y="0" width="63" height="15" uuid="aa604d64-5629-4857-863f-d7827e0fc10a"/>
+				<textFieldExpression><![CDATA[$F{pedidos_IdPedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="63" y="0" width="93" height="15" uuid="c98ab363-0c6c-46c1-8473-f110d0c6dcd3"/>
+				<textFieldExpression><![CDATA[$F{pedidos_Fecha_pedido}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="156" y="0" width="97" height="15" uuid="7b89dce1-0988-464b-ab84-a0f58fcc30d8"/>
+				<textFieldExpression><![CDATA[$F{pedidos_Fecha_esperada}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="341" y="0" width="123" height="15" uuid="fc7e49e9-36c3-4612-841c-cefea0c4b756"/>
+				<textFieldExpression><![CDATA[$F{pedidos_Estado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="464" y="0" width="179" height="15" uuid="5a7aa693-2e59-475e-8b52-fdaaf787cb90"/>
+				<textFieldExpression><![CDATA[$F{pedidos_Comentario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="253" y="2" width="88" height="14" uuid="ee2313a5-7102-44bf-b577-fa1f32343eeb"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pedidos_Fecha_entrega}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="c3ed57b3-9238-4629-9deb-a9480b9e4b35"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="ad657848-8eaa-4e9e-ab92-19fe10fa3991"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="b10c9697-1910-41ed-96ff-bc82716dc272"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="af7bca34-8cb8-4247-88d6-37e772ddde4e"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
