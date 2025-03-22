@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RepClientes" pageWidth="1044" pageHeight="1190" columnWidth="1004" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ca17b2bb-61e6-473e-9737-05564ddfe657">
 	<property name="ireport.zoom" value="1.0"/>
-	<property name="ireport.x" value="20"/>
+	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
@@ -44,7 +44,7 @@ FROM
 			</staticText>
 			<image hAlign="Center">
 				<reportElement x="852" y="-20" width="152" height="90" uuid="da36cef9-7db7-41b3-b51e-c74bea3ff9e4"/>
-				<imageExpression><![CDATA["C:\\Users\\everg\\eclipse-workspace - vivero\\vivero\\reportes\\Vivero_Zoe_logo sin fondo.png"]]></imageExpression>
+				<imageExpression><![CDATA["C:\\Users\\Usuario\\git\\Vivero\\reportes\\Vivero_Zoe_logo sin fondo.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>
