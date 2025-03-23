@@ -1,4 +1,4 @@
-package model;
+package Model;
 public class Venta {
 	//Atributos--------------------------------------------------------------------------------------Detalle Pedido
 	private int idpedido;

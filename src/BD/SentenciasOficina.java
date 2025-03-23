@@ -3,7 +3,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import model.Oficina;
+import Model.Oficina;
 
 
 public class SentenciasOficina extends Conector {

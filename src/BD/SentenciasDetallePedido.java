@@ -5,9 +5,9 @@ import java.sql.SQLException;
 import java.util.Vector;
 
 import Main.Principal;
+import Model.Venta;
+import Model.comboEntidadDP;
 import View.PanelVentas;
-import model.Venta;
-import model.comboEntidadDP;
 
 
 public class SentenciasDetallePedido extends Conector {

@@ -16,7 +16,7 @@ import java.awt.Color;
 import org.jdesktop.swingx.JXDatePicker;
 
 import BD.SentenciasDetallePedido;
-import model.comboEntidadDP;
+import Model.comboEntidadDP;
 
 import javax.swing.JComboBox;
 

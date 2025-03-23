@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class Usuario {
 	
@@ -7,13 +7,15 @@ public class Usuario {
 	private int idusuario;
 	private String usuario;
 	private String password;
+	private String rol;
 	
 	//Constructor
-	public Usuario(int idusuario, String usuario, String password) {
+	public Usuario(int idusuario, String usuario, String password, String rol) {
 		
 		this.idusuario = idusuario;
 		this.usuario = usuario;
 		this.password = password;
+		this.rol = rol;
 	}
 
 	public Usuario() {
@@ -48,6 +50,14 @@ public class Usuario {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getRol() {
+		return rol;
+	}
+
+	public void setRol(String rol) {
+		this.rol = rol;
 	}
 	
 	

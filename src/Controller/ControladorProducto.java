@@ -10,9 +10,9 @@ import javax.swing.table.DefaultTableModel;
 import BD.SentenciasProducto;
 import BD.SentenciasTipoProducto;
 import Main.Principal;
+import Model.Producto;
+import Model.comboEntidadTP;
 import View.JFrameTipoProducto;
-import model.Producto;
-import model.comboEntidadTP;
 
 public class ControladorProducto implements ActionListener,MouseListener {
 	Principal frm;

@@ -13,8 +13,8 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
 import Main.Principal;
-import model.Venta;
-import model.comboEntidadTP;
+import Model.Venta;
+import Model.comboEntidadTP;
 import BD.SentenciasDetallePedido;
 
 public class ControladorDetallePedido implements ActionListener,MouseListener {
