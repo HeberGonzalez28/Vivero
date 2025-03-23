@@ -7,8 +7,8 @@ import java.awt.event.MouseListener;
 import javax.swing.table.DefaultTableModel;
 
 import BD.SentenciasTipoProducto;
+import Model.Tproducto;
 import View.JFrameTipoProducto;
-import model.Tproducto;
 
 public class ControladorFactura implements ActionListener,MouseListener {
 	//Principal frm;

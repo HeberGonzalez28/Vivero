@@ -7,7 +7,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import BD.SentenciasProducto;
-import model.comboEntidadTP;
+import Model.comboEntidadTP;
 
 import javax.swing.JScrollPane;
 import javax.swing.DefaultComboBoxModel;

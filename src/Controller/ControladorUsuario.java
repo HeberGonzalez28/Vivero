@@ -8,7 +8,7 @@ import javax.swing.table.DefaultTableModel;
 
 import BD.SentenciasUsuario;
 import Main.Principal;
-import model.Usuario;
+import Model.Usuario;
 
 public class ControladorUsuario implements ActionListener,MouseListener {
 	Principal frm;

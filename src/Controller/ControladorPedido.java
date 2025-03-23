@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 import BD.SentenciasPedido;
 import Main.Principal;
-import model.Pedido;
+import Model.Pedido;
 
 public class ControladorPedido implements ActionListener,MouseListener {
 	Principal frm;

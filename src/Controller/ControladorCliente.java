@@ -9,9 +9,9 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.table.DefaultTableModel;
 
 import Main.Principal;
+import Model.Cliente;
 import BD.SentenciasCliente;
 import View.PanelClientes;
-import model.Cliente;
 
 public class ControladorCliente implements ActionListener, MouseListener {
 	Principal frm;
